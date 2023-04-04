@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header{
+   
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    padding: 20px 50px;
+    
+    align-items: center;
+}
+
+.logo{
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+   text-transform: uppercase;
+}
+
+.logo span{
+    color: #3DDAB4;
+}
+
+nav{
+    display: flex;
+}
+nav a{
+    margin-left: 20px;
+    color: #000 ;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+} 
+
+nav #icone-login{
+   margin-left: 20px;
+  transition: all 50ms;
+}
+
+nav a:hover{
+    color: #3DDAB4;
+}
+
+.imagem-login{
+    width: 28px;
+    height: 28px;
+}
+nav .imagem-login img{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/icons-login.png);
+    background-size: cover;
+    text-decoration-style: none;
+}
+
+nav .imagem-login img:hover{
+    background-image: url(img/icone2logo.png);
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/background-color.jpg');
+    background-position: right;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     position: relative;
+   
+}
+main img{
+    width: 30px;
+    height: 30px;
+}   
+
+.list{
+    position: absolute;
+    left: 40px;
+}
+
+.list h1{
+    font-size: 3em;
+    
+}
+ ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+main .main-ani{
+    color:#00B569;
+    border-right: 6px solid #00b569;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 90px 0px;
+ 
+}
+
+main .stylesanime{
+    animation: animetext 500ms steps(40) infinite normal,
+    animegeral 4s steps(40) 1s normal both ;
+}
+   
+@keyframes animetext{
+    form{
+       border-right-color: #00b569;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes animegeral{
+  from{
+      width:0;
+  }
+  to{
+ width: 10.4em;
+  }
+}
+
+.discrição{
+    height:170px;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #00B569;
+
+}
+
+.discrição h3{
+    color: #b74439;
+    font-size: 1.6em;
+}
+.discrição h2{
+ font-size: 2.0em;
+}
+
+
+.escolha{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: baseline;
+    height:170px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+}
+.profissão{
+    position: relative;
+    box-shadow: 0 1px 2px 0 rgba(0.1);
+    transition: all 0.6s cubic-bezier(0.165.0.84,0.44,1);
+}
+.profissão::after{
+    content: "";
+    position: absolute;
+   
+    opacity: 0;
+    box-shadow: 0 5px 0 rgba(0,0,0,0.3);
+    transition: all 0.6s   cubic-bezier(0.165,0.84, 0.44,1);
+    z-index: -1
+}
+.profissão:hover{
+    transform: scale(1.25,1.25);
+}
+.profissão:hover::after{
+    opacity:1;
+}
+
+
+.profissão a{
+    text-decoration: none; 
+    color: #000;
+}
+.profissão img{
+
+    width: 80px;
+}
+.profissão p{
+    font-size: 0.8em;
+}
+
+.modelos{
+    height: 100vh;
+    position: absolute ;
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+
+}
+.modelos h3{
+    position: relative; 
+    top: -100px;
+    left: 40px;
+    color:#00B569;
+}
+.modelos ,h2,p{
+    position: relative;
+   padding: 1.4em;
+    
+}
+
+.modelos img{
+    width: 400px;
+    height: 500px;
+    border-radius: 100%;
+}
+
+/* FOOTER */
+
+
+footer{
+    display: flex;
+    padding: 90px 0px;
+    background: #000;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.contato img{
+ width:15px;
+ height: 15px;
+}
+
+
+
+
+
+
+
+
+
